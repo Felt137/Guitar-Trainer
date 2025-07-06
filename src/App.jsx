@@ -63,7 +63,7 @@ function App() {
     const noteName = midiToNoteName(noteMidi);
 
     // 5. Воспроизводим ноту
-    synthRef.current.triggerAttackRelease(noteMidi, '8n'); // '8n' - восьмая нота
+    synthRef.current.triggerAttackRelease(noteName, '8n'); // '8n' - восьмая нота
 
     // 6. Обновляем состояние для отображения
     setCurrentNoteInfo({
